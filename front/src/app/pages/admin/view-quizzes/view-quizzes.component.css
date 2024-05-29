@@ -1,0 +1,8 @@
+.example-header-image {
+    background-image: url('../../../../assets/quiz.png');
+    background-size: cover;
+  }
+.img{
+  background-image: url('../../../../assets/quiz.png');
+  background-size: cover;
+}

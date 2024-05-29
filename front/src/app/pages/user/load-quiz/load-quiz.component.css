@@ -1,0 +1,18 @@
+.truncate{
+    display:block;
+    white-space: nowrap;
+    /* width:100%; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.example-header-image {
+    background-image: url('/assets/quiz.png');
+    background-size: cover;
+}
+.active{
+    content: " ";
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: green !important;
+}

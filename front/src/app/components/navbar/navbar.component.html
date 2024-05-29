@@ -1,0 +1,29 @@
+<mat-toolbar color="primary" class="navColor">
+    <a routerLink="/" class="example-icon" aria-label="Example icon-button with menu icon"
+    mat-icon-button>
+      <mat-icon>menu_book</mat-icon>
+    </a>
+    <span>Exam Portal</span>
+    <span class="example-spacer"></span>
+    <a *ngIf="!isloggedIn" [routerLink]="'/login'"  mat-icon-button class="example-icon favorite-icon mr10">
+      Log In
+    </a>
+    <a *ngIf="!isloggedIn" [routerLink]="'/signup'" mat-icon-button class="example-icon favorite-icon ml20" style="margin-right: 50px;">
+      Register
+    </a>
+    <a *ngIf="isloggedIn" (click)="logout()"  mat-icon-button class="example-icon favorite-icon mr20">
+      Log out
+    </a>
+    <!-- <a *ngIf="isloggedIn && user" [routerLink]="authority==='Admin'?['/admin/profile']:['/user/profile']" mat-icon-button class="example-icon favorite-icon mr20" style="margin-left: 50px;margin-right: 50px;"
+    >
+      {{user.username}}
+    </a> -->
+    <a *ngIf="isloggedIn && user" [routerLink]="'/admin/profile'" mat-icon-button class="example-icon favorite-icon mr20" style="margin-left: 50px;margin-right: 50px;"
+    >
+    <div class="" style="display: flex;justify-content: center; align-items: center;">
+      
+    <span>{{user.username}}</span>
+    <mat-icon mat-list-icon class="property">face</mat-icon> 
+    </div>
+    </a>
+  </mat-toolbar>

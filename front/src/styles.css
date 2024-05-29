@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+background-color: #bcaaa4}
+
+.text-center{
+    text-align: center !important;
+}
+.fullwidth{
+    width: 90%;
+}
+.ml20{
+    margin-left: 20px;
+}
+.mr20{
+    margin-right: 20px;
+}
+.mt20{
+    margin-top: 20px !important;
+}
+.mb20{
+    margin-bottom: 20px;
+}
+
+.ml10{
+    margin-left: 10px;
+}
+.mr10{
+    margin-right: 10px;
+}
+.mt10{
+    margin-top: 10px;
+}
+.mb10{
+    margin-bottom: 10px;
+}
+.cardCol{
+    background-color: #cfd8dc !important;
+}
+.property{
+    overflow:inherit !important;
+}
+.ml3{
+    margin-left: 3px;
+}
